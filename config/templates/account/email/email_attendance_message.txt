@@ -1,0 +1,7 @@
+Hi{% if user.first_name %} {{ user.first_name }}{% endif %},
+
+    you did not fill in your attendance
+
+
+Thanks,
+CoolSchool Team

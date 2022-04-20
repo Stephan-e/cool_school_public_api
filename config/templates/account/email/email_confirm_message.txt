@@ -1,0 +1,9 @@
+Hi{% if user.first_name %} {{ user.first_name }}{% endif %},
+
+An account was created for you on CoolSchool, Please follow the link to complete the signup process:
+
+{{url}}
+
+Thanks,
+
+CoolSchool Team

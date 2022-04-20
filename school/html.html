@@ -1,0 +1,667 @@
+<article class="site-page" data-template-page="">
+    <div class="container">
+        <div class="guide-container guide-v2 js-guide-container container">
+            <div class="guide-all-metadata">
+                <div class="guide-metadata guide-status-container">
+                    <div class="statuses">
+                    </div>
+                </div>
+                <div class="guide-metadata guide-title-container">
+                    <h1 id="guide-intro-title" class="guide-title" itemprop="name">
+                        Setting up the micro:bit with Makecode
+                    </h1>
+                    <h4>
+                        Learn about the programming interface for the micro:bit
+                    </h4>
+                    <p class="highlight-text highlight-blue visible-mobile-inline-block">Featured</p>
+                    <div class="guide-author guide-title-subtext">
+                        Written By: <span>
+                            Cherie Tan</span>
+                    </div>
+                    <div itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+                        <meta itemprop="url" content="/a/how-to/authors/cherie-tan">
+                        <meta itemprop="name" content="Cherie Tan">
+                        <meta itemprop="image" content="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/variants/kcxWB7f4AVKhaWJsEgAbT6sM/141184e8e8c2b05ceb48e56112a7c969fd6d3175666c2daff6363137ea28fe0c?response-content-disposition=inline%3B%20filename%3D%22makecode-interface-guide-img.001.jpeg%22%3B%20filename%2A%3DUTF-8%27%27makecode-interface-guide-img.001.jpeg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=1d7e3e63f121da8917e46546f8a36f699b35a4aa0b1888bf2f09ccffeb3e1a98">
+                    </div>
+                    <meta itemprop="datePublished" content="2019-06-04T05:37:06Z">
+                    <meta itemprop="dateModified" content="2019-06-13T01:17:45Z">
+                </div>
+                <div class="guide-metadata guide-main-image-container">
+                    <div class="guide-main-image" itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+                        <img class="hasNewMenu" itemprop="url" alt="Setting up the micro:bit with Makecode" src="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/kcxWB7f4AVKhaWJsEgAbT6sM?response-content-disposition=inline%3B%20filename%3D%22makecode-interface-guide-img.001.jpeg%22%3B%20filename%2A%3DUTF-8%27%27makecode-interface-guide-img.001.jpeg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=9bcdafddaf1e8511b15b028e96bd20bb29b6e608ebedd636eb0160d5a89a2b06">
+
+                        <!-- https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/variants/kcxWB7f4AVKhaWJsEgAbT6sM/0de6b72aea4902512c7f76c1b8e47a591f72e87d95b65d259faf52037c0f4733?response-content-disposition=inline%3B%20filename%3D%22makecode-interface-guide-img.001.jpeg%22%3B%20filename%2A%3DUTF-8%27%27makecode-interface-guide-img.001.jpeg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=30f87a57909af05d2ccb87275d7f146a8f849f44c195e244d40ce16a6cfcee38 -->
+                        <!-- https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/variants/kcxWB7f4AVKhaWJsEgAbT6sM/141184e8e8c2b05ceb48e56112a7c969fd6d3175666c2daff6363137ea28fe0c?response-content-disposition=inline%3B%20filename%3D%22makecode-interface-guide-img.001.jpeg%22%3B%20filename%2A%3DUTF-8%27%27makecode-interface-guide-img.001.jpeg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=1d7e3e63f121da8917e46546f8a36f699b35a4aa0b1888bf2f09ccffeb3e1a98 -->
+
+
+                        <meta itemprop="width" content="592">
+                        <meta itemprop="height" content="444">
+                    </div>
+                    <div class="blurred visible-mobile" style="background-image:url( <img src=" https:="" s3.ap-southeast-2.amazonaws.com="" cdn.schappi.com="" variants="" kcxwb7f4avkhawjsegabt6sm="" 141184e8e8c2b05ceb48e56112a7c969fd6d3175666c2daff6363137ea28fe0c?response-content-disposition="inline%3B%20filename%3D%22makecode-interface-guide-img.001.jpeg%22%3B%20filename%2A%3DUTF-8%27%27makecode-interface-guide-img.001.jpeg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=1d7e3e63f121da8917e46546f8a36f699b35a4aa0b1888bf2f09ccffeb3e1a98&quot;">)"&gt;</div>
+                </div>
+                <div class="guide-metadata guide-details-container js-guide-details-container">
+                    <div class="details-item-container">
+                        <div class="details-item difficulty row very easy-difficulty">
+                            <p class="item-title column">
+                                <i class="svg-icon" style="display: inline-block; width: 24px; height: 24px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="difficulty" transform="translate(1.000000, 1.000000)" stroke="#969696" stroke-width="2">
+                                                <path d="M12,6.5 L10,13" id="Path"></path>
+                                                <path d="M4,14 L0,14 L0,10 C1.33226763e-15,4.4771525 4.4771525,8.8817842e-16 10,0 C15.5228475,-8.8817842e-16 20,4.4771525 20,10 L20,14 L16,14 L4,14 Z" id="Path"></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </i>Difficulty</p>
+                            <p class="item-value column">
+                                <span class="difficulty-indicator">
+                                    <span class="indicator-dot"></span><span class="indicator-dot"></span><span class="indicator-dot"></span>
+                                </span>
+                                Very Easy
+                            </p>
+                        </div>
+                    </div>
+                    <div class="details-item-container">
+                        <div class="details-item row">
+                            <p class="item-title column"><i class="svg-icon" style="display: inline-block; width: 24px; height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="8" y1="6" x2="21" y2="6"></line>
+                                        <line x1="8" y1="12" x2="21" y2="12"></line>
+                                        <line x1="8" y1="18" x2="21" y2="18"></line>
+                                        <line x1="3" y1="6" x2="3" y2="6"></line>
+                                        <line x1="3" y1="12" x2="3" y2="12"></line>
+                                        <line x1="3" y1="18" x2="3" y2="18"></line>
+                                    </svg>
+                                </i>Steps</p>
+                            <p class="item-value column">
+                                9
+                            </p>
+                        </div>
+                    </div>
+                    <div id="guide-time-required" class="details-item-container">
+                        <div class="details-item row">
+                            <p class="item-title column"><i class="svg-icon" style="display: inline-block; width: 24px; height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 15 15"></polyline>
+                                    </svg></i>Time Required</p>
+                            <meta itemprop="totalTime" content="PT0S">
+                            <p class="item-value">
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <div id="guide-time-required" class="details-item-container">
+                        <div class="details-item row">
+                            <p class="item-title column"><i class="fa fa-shopping-cart" style=" color:#969696; display: inline-block; width: 24px; height: 24px;"></i>Resources</p>
+                            <meta itemprop="totalTime" content="PT7200S">
+                            <p class="item-value">
+                                <a class="button button-small" style="padding:5px; padding-top:0; padding-bottom: 0; margin-right: 0px;" href="/cart/add?id[]=14508650758207&amp;">Add Parts and Supplies to Cart</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="introduction-container">
+                <h2>Introduction</h2>
+                <div itemprop="description">
+                    <div>This guide steps through how to set up the BBC Micro:Bit programming interface and how to add on packages.<br><br>
+</div><div>The two program interfaces currently available are the 'Blocks' interface and the 'Javascript' interface. These two interact with each other seamlessly.<br><br>
+</div><div>
+<strong>Note: If you are using Windows 10 and the micro:bit is not detected and you are unable to upload code to it, connect the micro:bit to another device and upgrade to the </strong><a href="https://support.microbit.org/support/solutions/articles/19000019131-how-to-upgrade-the-firmware-on-the-micro-bit" target="_blank"><strong>latest micro:bit firmware</strong></a><strong>. This does not apply to Mac OSX school.</strong>
+</div>
+                </div>
+            </div>
+            <div class="row item-list-container">
+                <div class="column one-half item-list-tools">
+                    <div class="item-list-header row">
+                        <h3 class="column full-width">Tools</h3>
+                        <p class="item-list-shop-link item-list-item column">
+                            <a href="/cart/add?id[]=14508650758207&amp;" style="padding-right: 10px;"><i class="fa fa-shopping-cart fa-li"></i>Add Tools to Cart</a>
+                        </p>
+                    </div>
+                    <ul class="item-list-featured attachment-link-list no-columns">
+                    </ul>
+                    <ul class="item-list fa-ul">
+                        <li class="item-list-item" itemprop="tool" itemscope="" itemtype="http://schema.org/HowToTool"><a href="https://littlebirdcompany.myshopify.com/products/bbc-micro-bit-go-bundle" data-price="26.4" data-subtitle-text="$26.4" data-guideinfo="" data-subtitle-class="price" data-supplier="littlebirdcompany.myshopify.com" data-purchaseurl="https://littlebirdcompany.myshopify.com/products/bbc-micro-bit-go-bundle" data-text="BBC micro:bit Go Bundle" data-private="0" data-tooltip-class="item-hover" data-info-button-class="button button-small button-transparent" data-buy-button-class="button button-small button-action" class="" target="_blank">
+                                <meta itemprop="requiredQuantity" content="1">
+                                <meta itemprop="url" content="https://littlebirdcompany.myshopify.com/products/bbc-micro-bit-go-bundle"> <span class="itemName" itemprop="name">
+                                    BBC micro:bit Go Bundle</span>
+                            </a>
+                            <i class="fa fa-shopping-cart fa-li"></i> </li>
+                    </ul>
+                </div>
+                <div class="column one-half item-list-parts">
+                </div>
+            </div>
+            <div itemprop="estimatedCost" itemscope="" itemtype="http://schema.org/MonetaryAmount">
+                <meta itemprop="currency" content="AUD">
+                <meta itemprop="value" content="0.0">
+            </div>
+        </div>
+    </div>
+    <ol class="steps-container container">
+
+
+            
+<li id="s608" class="step step-wrapper js-step">
+    <div class="step" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/HowToStep">
+        <meta itemprop="position" content="1">
+        <meta itemprop="thumbnailUrl" content="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/variants/36rYdSLhPZDdi3wVq6ZYoGFn/1d55937d92edc12a02f102727ff9a5bcb953531a6aeea599a5869349a18f766d?response-content-disposition=inline%3B%20filename%3D%22new-project.jpg%22%3B%20filename%2A%3DUTF-8%27%27new-project.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=afb783bd5d23f2968d78c9561688e63095ca6ff9de66031509d62824ec630352">
+        <meta itemprop="image" content="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/variants/36rYdSLhPZDdi3wVq6ZYoGFn/141184e8e8c2b05ceb48e56112a7c969fd6d3175666c2daff6363137ea28fe0c?response-content-disposition=inline%3B%20filename%3D%22new-project.jpg%22%3B%20filename%2A%3DUTF-8%27%27new-project.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=89d3d0dac6f3d0f3bf9439b7f3078b6b6ac3c3a45002d7cdbb9973eb8b0c6da5">
+    </div>
+    <div class="row">
+        <div class="column four-fifths">
+            <h2 class="step-title">
+            <a class="fragment-link" itemprop="url" href="#s608">
+                <strong class="stepValue">Step
+                1</strong>
+                <span class="stepTitleTitle" itemprop="name">
+                Go to the makecode.microbit.org website</span>
+            </a>
+            </h2>
+        </div>
+        <div class="column one-fifth">
+        </div>
+    </div>
+    <div class="row step-container">
+        <div class="column stepMedia step-main-media js-step-main-media stepImage stepImageContainer">
+            <img class="stepImage js-step-main-image hasNewMenu fluid visible medium" id="step608-main" itemprop="url" alt="Go to the makecode.microbit.org website" src="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/36rYdSLhPZDdi3wVq6ZYoGFn?response-content-disposition=inline%3B%20filename%3D%22new-project.jpg%22%3B%20filename%2A%3DUTF-8%27%27new-project.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=4d6f945f42ecca20dc2bd9d48c28d427d0e07c24d8f3ca4590d94a17443af195">
+        </div>
+        <div class="column step-content">
+            <div class="row step-lines-container">
+                <ul class="step-lines">
+                    <li class="level-0  bullet-line-icon-normal" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToDirection">
+                        <meta itemprop="position" content="1">
+                        <div class="bullet fa fa-circle bullet_black"></div>
+                        <p itemprop="text">
+                            All of the programming for the micro:bit is done through their website. Open this link to go to the website: <a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org</a>
+                        </p>
+                        <div class="clearer"></div>
+                    </li>
+                    <li class="level-1  bullet-line-icon-normal" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToDirection">
+                        <meta itemprop="position" content="2">
+                        <div class="bullet fa fa-circle bullet_black"></div>
+                        <p itemprop="text">
+                            Click on 'New Project'&nbsp;
+                        </p>
+                        <div class="clearer"></div>
+                    </li>
+                    <li class="level-2  bullet-line-icon-normal" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToDirection">
+                        <meta itemprop="position" content="3">
+                        <div class="bullet fa fa-circle bullet_black"></div>
+                        <p itemprop="text">
+                            You'll then be directed to the MakeCode editor.
+                        </p>
+                        <div class="clearer"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</li>
+
+
+            
+<li id="s609" class="step step-wrapper js-step">
+    <div class="step" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/HowToStep">
+        <meta itemprop="position" content="2">
+        <meta itemprop="thumbnailUrl" content="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/variants/Qr1WTeCrS3HgtarHmiQGyAGD/1d55937d92edc12a02f102727ff9a5bcb953531a6aeea599a5869349a18f766d?response-content-disposition=inline%3B%20filename%3D%22blocks-interface.jpg%22%3B%20filename%2A%3DUTF-8%27%27blocks-interface.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=034e7c21fd2bd340a3845c81a2c60cca77123f0415546671ca02b0949f9ca0db">
+        <meta itemprop="image" content="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/variants/Qr1WTeCrS3HgtarHmiQGyAGD/141184e8e8c2b05ceb48e56112a7c969fd6d3175666c2daff6363137ea28fe0c?response-content-disposition=inline%3B%20filename%3D%22blocks-interface.jpg%22%3B%20filename%2A%3DUTF-8%27%27blocks-interface.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=7ff48cfba6e480cad86301d049d33701a03a4dddb46758948a5e8121cd914fe5">
+    </div>
+    <div class="row">
+        <div class="column four-fifths">
+            <h2 class="step-title">
+            <a class="fragment-link" itemprop="url" href="#s609">
+                <strong class="stepValue">Step
+                2</strong>
+                <span class="stepTitleTitle" itemprop="name">
+                The two interfaces</span>
+            </a>
+            </h2>
+        </div>
+        <div class="column one-fifth">
+        </div>
+    </div>
+    <div class="row step-container">
+        <div class="column stepMedia step-main-media js-step-main-media stepImage stepImageContainer">
+            <img class="stepImage js-step-main-image hasNewMenu fluid visible medium" id="step609-main" itemprop="url" alt="The two interfaces" src="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/Qr1WTeCrS3HgtarHmiQGyAGD?response-content-disposition=inline%3B%20filename%3D%22blocks-interface.jpg%22%3B%20filename%2A%3DUTF-8%27%27blocks-interface.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=f752d7e834996c93379598fdab2de292af53aa2d592bf751467fe47a5c26e5d6">
+        </div>
+        <div class="column step-content">
+            <div class="row step-lines-container">
+                <ul class="step-lines">
+                    <li class="level-0  bullet-line-icon-normal" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToTip">
+                        <meta itemprop="position" content="">
+                        <div class="bullet fa fa-circle bullet_black"></div>
+                        <p itemprop="text">
+                            The micro:bit coding interface has two options; the 'Blocks' interface and a 'Javascript' interface. These interfaces are intended to enable one to learn coding easily by being able to transfer from blocks to javascript.
+                        </p>
+                        <div class="clearer"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</li>
+
+
+            
+<li id="s610" class="step step-wrapper js-step">
+    <div class="step" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/HowToStep">
+        <meta itemprop="position" content="3">
+        <meta itemprop="thumbnailUrl" content="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/variants/sS7kYW6ppY4f2A4NAZbKkuzy/1d55937d92edc12a02f102727ff9a5bcb953531a6aeea599a5869349a18f766d?response-content-disposition=inline%3B%20filename%3D%22blocks-interface%20%25281%2529.jpg%22%3B%20filename%2A%3DUTF-8%27%27blocks-interface%2520%25281%2529.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=f4ca3f763c77d7bce6d31c0324b69873f44bd77b077b6687345f73e4d0341ebb">
+        <meta itemprop="image" content="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/variants/sS7kYW6ppY4f2A4NAZbKkuzy/141184e8e8c2b05ceb48e56112a7c969fd6d3175666c2daff6363137ea28fe0c?response-content-disposition=inline%3B%20filename%3D%22blocks-interface%20%25281%2529.jpg%22%3B%20filename%2A%3DUTF-8%27%27blocks-interface%2520%25281%2529.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=945940a34104adbd0ea1ff9e570ec341564f568a6b7aca94f4322ce538d9c3fd">
+    </div>
+    <div class="row">
+        <div class="column four-fifths">
+            <h2 class="step-title">
+            <a class="fragment-link" itemprop="url" href="#s610">
+                <strong class="stepValue">Step
+                3</strong>
+                <span class="stepTitleTitle" itemprop="name">
+                Introduction to the Blocks Interface</span>
+            </a>
+            </h2>
+        </div>
+        <div class="column one-fifth">
+        </div>
+    </div>
+    <div class="row step-container">
+        <div class="column stepMedia step-main-media js-step-main-media stepImage stepImageContainer">
+            <img class="stepImage js-step-main-image hasNewMenu fluid visible medium" id="step610-main" itemprop="url" alt="Introduction to the Blocks Interface" src="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/sS7kYW6ppY4f2A4NAZbKkuzy?response-content-disposition=inline%3B%20filename%3D%22blocks-interface%20%25281%2529.jpg%22%3B%20filename%2A%3DUTF-8%27%27blocks-interface%2520%25281%2529.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=a991ed84fc6ce3e0ead63e09425979f5d772a6dd06e264907d6cb581b217bdba">
+        </div>
+        <div class="column step-content">
+            <div class="row step-thumbnails">
+                <div class="column step-thumbnail js-step-thumbnail-container" data-fullimg="step610-stepImage1">
+                    <div class="step-thumbnail-inner">
+                        <img class="stepImage js-step-main-image js-step-thumbnail fluid medium" itemprop="url" alt="Introduction to the Blocks Interface" onmouseover="$('#step610-main').attr('src','https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/sS7kYW6ppY4f2A4NAZbKkuzy?response-content-disposition=inline%3B%20filename%3D%22blocks-interface%20%25281%2529.jpg%22%3B%20filename%2A%3DUTF-8%27%27blocks-interface%2520%25281%2529.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=a991ed84fc6ce3e0ead63e09425979f5d772a6dd06e264907d6cb581b217bdba');" src="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/sS7kYW6ppY4f2A4NAZbKkuzy?response-content-disposition=inline%3B%20filename%3D%22blocks-interface%20%25281%2529.jpg%22%3B%20filename%2A%3DUTF-8%27%27blocks-interface%2520%25281%2529.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=a991ed84fc6ce3e0ead63e09425979f5d772a6dd06e264907d6cb581b217bdba">
+                    </div>
+                </div>
+                <div class="column step-thumbnail js-step-thumbnail-container" data-fullimg="step610-stepImage1">
+                    <div class="step-thumbnail-inner">
+                        <img class="stepImage js-step-main-image js-step-thumbnail fluid medium" itemprop="url" alt="Introduction to the Blocks Interface" onmouseover="$('#step610-main').attr('src','https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/Le52oo3S5xgXDm7Q1QrzSTbV?response-content-disposition=inline%3B%20filename%3D%22blocks-interface%20%25282%2529.jpg%22%3B%20filename%2A%3DUTF-8%27%27blocks-interface%2520%25282%2529.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=5131aef48471c7b4c1ecd46876bdb033735994aa1bf253b8297dc72dfddfc6ab');" src="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/Le52oo3S5xgXDm7Q1QrzSTbV?response-content-disposition=inline%3B%20filename%3D%22blocks-interface%20%25282%2529.jpg%22%3B%20filename%2A%3DUTF-8%27%27blocks-interface%2520%25282%2529.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=5131aef48471c7b4c1ecd46876bdb033735994aa1bf253b8297dc72dfddfc6ab">
+                    </div>
+                </div>
+            </div>
+            <div class="row step-lines-container">
+                <ul class="step-lines">
+                    <li class="level-0  bullet-line-icon-normal" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToTip">
+                        <meta itemprop="position" content="1">
+                        <div class="bullet fa fa-circle bullet_black"></div>
+                        <p itemprop="text">
+                            The blocks interface is a visual programming interface; where 'blocks' 'snap' into place to form functions and commands
+                        </p>
+                        <div class="clearer"></div>
+                    </li>
+                    <li class="level-1  bullet-line-icon-note" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToTip">
+                        <meta itemprop="position" content="2">
+                        <div class="bullet bulletIcon ico-step-icon-note"></div>
+                        <p itemprop="text">
+                            This type of interface is aimed at beginners to aid them in the beginning of their programming journey and help one understand how computer commands and functions work.<br>
+                        </p>
+                        <div class="clearer"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</li>
+
+
+            
+<li id="s611" class="step step-wrapper js-step">
+    <div class="step" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/HowToStep">
+        <meta itemprop="position" content="4">
+        <meta itemprop="thumbnailUrl" content="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/variants/yNA91Abb9DA4NB313oiA8UsT/1d55937d92edc12a02f102727ff9a5bcb953531a6aeea599a5869349a18f766d?response-content-disposition=inline%3B%20filename%3D%22panel-and-simulator-makecode.jpg%22%3B%20filename%2A%3DUTF-8%27%27panel-and-simulator-makecode.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=dc6d8d68bf6c7b40236d1dbe796ece0479b0e80c7af65e35cfcb0ec7952acdaf">
+        <meta itemprop="image" content="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/variants/yNA91Abb9DA4NB313oiA8UsT/141184e8e8c2b05ceb48e56112a7c969fd6d3175666c2daff6363137ea28fe0c?response-content-disposition=inline%3B%20filename%3D%22panel-and-simulator-makecode.jpg%22%3B%20filename%2A%3DUTF-8%27%27panel-and-simulator-makecode.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=d94e59044b2d0ba77a8bc2a9bdce88af404484eb651af2875c191b8fd869b07b">
+    </div>
+    <div class="row">
+        <div class="column four-fifths">
+            <h2 class="step-title">
+            <a class="fragment-link" itemprop="url" href="#s611">
+                <strong class="stepValue">Step
+                4</strong>
+                <span class="stepTitleTitle" itemprop="name">
+                Blocks interface - Panel Layout</span>
+            </a>
+            </h2>
+        </div>
+        <div class="column one-fifth">
+        </div>
+    </div>
+    <div class="row step-container">
+        <div class="column stepMedia step-main-media js-step-main-media stepImage stepImageContainer">
+            <img class="stepImage js-step-main-image hasNewMenu fluid visible medium" id="step611-main" itemprop="url" alt="Blocks interface - Panel Layout" src="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/yNA91Abb9DA4NB313oiA8UsT?response-content-disposition=inline%3B%20filename%3D%22panel-and-simulator-makecode.jpg%22%3B%20filename%2A%3DUTF-8%27%27panel-and-simulator-makecode.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=74a6b7683d76e7b072f9f5b2f69d639626b9f3a7254fbdee0b76dcba79f2c2a0">
+        </div>
+        <div class="column step-content">
+            <div class="row step-thumbnails">
+                <div class="column step-thumbnail js-step-thumbnail-container" data-fullimg="step611-stepImage1">
+                    <div class="step-thumbnail-inner">
+                        <img class="stepImage js-step-main-image js-step-thumbnail fluid medium" itemprop="url" alt="Blocks interface - Panel Layout" onmouseover="$('#step611-main').attr('src','https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/yNA91Abb9DA4NB313oiA8UsT?response-content-disposition=inline%3B%20filename%3D%22panel-and-simulator-makecode.jpg%22%3B%20filename%2A%3DUTF-8%27%27panel-and-simulator-makecode.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=74a6b7683d76e7b072f9f5b2f69d639626b9f3a7254fbdee0b76dcba79f2c2a0');" src="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/yNA91Abb9DA4NB313oiA8UsT?response-content-disposition=inline%3B%20filename%3D%22panel-and-simulator-makecode.jpg%22%3B%20filename%2A%3DUTF-8%27%27panel-and-simulator-makecode.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=74a6b7683d76e7b072f9f5b2f69d639626b9f3a7254fbdee0b76dcba79f2c2a0">
+                    </div>
+                </div>
+                <div class="column step-thumbnail js-step-thumbnail-container" data-fullimg="step611-stepImage1">
+                    <div class="step-thumbnail-inner">
+                        <img class="stepImage js-step-main-image js-step-thumbnail fluid medium" itemprop="url" alt="Blocks interface - Panel Layout" onmouseover="$('#step611-main').attr('src','https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/iuWEJDY5RkA1Yd9JScgj3PXY?response-content-disposition=inline%3B%20filename%3D%22panel-building-space-makecode.jpg%22%3B%20filename%2A%3DUTF-8%27%27panel-building-space-makecode.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=cb01ce0303d735f6c230d95a923ed053e1c1c38cc30f1a70e127e7265c27c63b');" src="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/iuWEJDY5RkA1Yd9JScgj3PXY?response-content-disposition=inline%3B%20filename%3D%22panel-building-space-makecode.jpg%22%3B%20filename%2A%3DUTF-8%27%27panel-building-space-makecode.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=cb01ce0303d735f6c230d95a923ed053e1c1c38cc30f1a70e127e7265c27c63b">
+                    </div>
+                </div>
+            </div>
+            <div class="row step-lines-container">
+                <ul class="step-lines">
+                    <li class="level-0  bullet-line-icon-normal" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToTip">
+                        <meta itemprop="position" content="1">
+                        <div class="bullet fa fa-circle bullet_black"></div>
+                        <p itemprop="text">
+                            As a blank project is opened, down the side is the location of all the 'blocks' separated in their categories; With a BBC micro simulator next to this.
+                        </p>
+                        <div class="clearer"></div>
+                    </li>
+                    <li class="level-1  bullet-line-icon-normal" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToTip">
+                        <meta itemprop="position" content="2">
+                        <div class="bullet fa fa-circle bullet_black"></div>
+                        <p itemprop="text">
+                            In the centre is the panel building space. This is where the blocks get placed and the programming happens!
+                        </p>
+                        <div class="clearer"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</li>
+
+
+            
+<li id="s612" class="step step-wrapper js-step">
+    <div class="step" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/HowToStep">
+        <meta itemprop="position" content="5">
+        <meta itemprop="thumbnailUrl" content="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/variants/uDtbLGFbMDar1AzVmq644grx/1d55937d92edc12a02f102727ff9a5bcb953531a6aeea599a5869349a18f766d?response-content-disposition=inline%3B%20filename%3D%22extensions-tab-makecode-intro.jpg%22%3B%20filename%2A%3DUTF-8%27%27extensions-tab-makecode-intro.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=ae3f08230d89126f42aa8b53e3ebba12f7fb8a035b8d4fc3b6329d02d88546cd">
+        <meta itemprop="image" content="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/variants/uDtbLGFbMDar1AzVmq644grx/141184e8e8c2b05ceb48e56112a7c969fd6d3175666c2daff6363137ea28fe0c?response-content-disposition=inline%3B%20filename%3D%22extensions-tab-makecode-intro.jpg%22%3B%20filename%2A%3DUTF-8%27%27extensions-tab-makecode-intro.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=8ec490e32ac24ef9494933184394cc5b0c84dab511348debfa377e72ad845638">
+    </div>
+    <div class="row">
+        <div class="column four-fifths">
+            <h2 class="step-title">
+            <a class="fragment-link" itemprop="url" href="#s612">
+                <strong class="stepValue">Step
+                5</strong>
+                <span class="stepTitleTitle" itemprop="name">
+                Adding extensions</span>
+            </a>
+            </h2>
+        </div>
+        <div class="column one-fifth">
+        </div>
+    </div>
+    <div class="row step-container">
+        <div class="column stepMedia step-main-media js-step-main-media stepImage stepImageContainer">
+            <img class="stepImage js-step-main-image hasNewMenu fluid visible medium" id="step612-main" itemprop="url" alt="Adding extensions" src="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/uDtbLGFbMDar1AzVmq644grx?response-content-disposition=inline%3B%20filename%3D%22extensions-tab-makecode-intro.jpg%22%3B%20filename%2A%3DUTF-8%27%27extensions-tab-makecode-intro.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=4739f9b167cf4bc021d5628614e425a8f4c068dcc8d1879a4163831560e992b3">
+        </div>
+        <div class="column step-content">
+            <div class="row step-lines-container">
+                <ul class="step-lines">
+                    <li class="level-0  bullet-line-icon-normal" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToTip">
+                        <meta itemprop="position" content="1">
+                        <div class="bullet fa fa-circle bullet_black"></div>
+                        <p itemprop="text">
+                            Extension packages are used to extend the functionality of the micro:bit
+                        </p>
+                        <div class="clearer"></div>
+                    </li>
+                    <li class="level-1  bullet-line-icon-normal" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToDirection">
+                        <meta itemprop="position" content="2">
+                        <div class="bullet fa fa-circle bullet_black"></div>
+                        <p itemprop="text">
+                            To add a package, you must first click on the 'Advanced' tab found on the bottom of the panel layout.
+                        </p>
+                        <div class="clearer"></div>
+                    </li>
+                    <li class="level-2  bullet-line-icon-normal" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToDirection">
+                        <meta itemprop="position" content="3">
+                        <div class="bullet fa fa-circle bullet_black"></div>
+                        <p itemprop="text">
+                            Next select 'Extensions' button
+                        </p>
+                        <div class="clearer"></div>
+                    </li>
+                    <li class="level-3  bullet-line-icon-normal" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToDirection">
+                        <meta itemprop="position" content="4">
+                        <div class="bullet fa fa-circle bullet_black"></div>
+                        <p itemprop="text">
+                            And now you can search for the extension package you need, for the groove kit, the package required is the 'grove zero' package
+                        </p>
+                        <div class="clearer"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</li>
+
+
+            
+<li id="s613" class="step step-wrapper js-step">
+    <div class="step" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/HowToStep">
+        <meta itemprop="position" content="6">
+        <meta itemprop="thumbnailUrl" content="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/variants/CxA3HmhCc86qk2f3S8dcPADd/1d55937d92edc12a02f102727ff9a5bcb953531a6aeea599a5869349a18f766d?response-content-disposition=inline%3B%20filename%3D%22blocks-interface%20%25283%2529.jpg%22%3B%20filename%2A%3DUTF-8%27%27blocks-interface%2520%25283%2529.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=eeec63a4ea15218e88088e241bf2099ce1b9c4326b97e3c79610aa1150ed55b3">
+        <meta itemprop="image" content="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/variants/CxA3HmhCc86qk2f3S8dcPADd/141184e8e8c2b05ceb48e56112a7c969fd6d3175666c2daff6363137ea28fe0c?response-content-disposition=inline%3B%20filename%3D%22blocks-interface%20%25283%2529.jpg%22%3B%20filename%2A%3DUTF-8%27%27blocks-interface%2520%25283%2529.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=d850fcf2c69582e3ad11809b639a0636844d7157726c37b2ee6f173f0fc6fd06">
+    </div>
+    <div class="row">
+        <div class="column four-fifths">
+            <h2 class="step-title">
+            <a class="fragment-link" itemprop="url" href="#s613">
+                <strong class="stepValue">Step
+                6</strong>
+                <span class="stepTitleTitle" itemprop="name">
+                Blocks interface - Programming</span>
+            </a>
+            </h2>
+        </div>
+        <div class="column one-fifth">
+        </div>
+    </div>
+    <div class="row step-container">
+        <div class="column stepMedia step-main-media js-step-main-media stepImage stepImageContainer">
+            <img class="stepImage js-step-main-image hasNewMenu fluid visible medium" id="step613-main" itemprop="url" alt="Blocks interface - Programming" src="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/CxA3HmhCc86qk2f3S8dcPADd?response-content-disposition=inline%3B%20filename%3D%22blocks-interface%20%25283%2529.jpg%22%3B%20filename%2A%3DUTF-8%27%27blocks-interface%2520%25283%2529.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=0f1b26a70643fc10ba8acb42ca58543bcfc6f58223e3d822faa012155a5a22b2">
+        </div>
+        <div class="column step-content">
+            <div class="row step-lines-container">
+                <ul class="step-lines">
+                    <li class="level-0  bullet-line-icon-normal" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToTip">
+                        <meta itemprop="position" content="1">
+                        <div class="bullet fa fa-circle bullet_black"></div>
+                        <p itemprop="text">
+                            To program using the block interface, an 'on start' or a 'forever' loop is required which allows anything in this loop runs forever.
+                        </p>
+                        <div class="clearer"></div>
+                    </li>
+                    <li class="level-1  bullet-line-icon-note" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToTip">
+                        <meta itemprop="position" content="2">
+                        <div class="bullet bulletIcon ico-step-icon-note"></div>
+                        <p itemprop="text">
+                            To program, a simple click, drag and drop maneuverer is employed; this can be done with any of the 'blocks'.<br>
+                        </p>
+                        <div class="clearer"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</li>
+
+
+            
+<li id="s614" class="step step-wrapper js-step">
+    <div class="step" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/HowToStep">
+        <meta itemprop="position" content="7">
+        <meta itemprop="thumbnailUrl" content="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/variants/dG3b2x96ATz3LxGQieFxUVJw/1d55937d92edc12a02f102727ff9a5bcb953531a6aeea599a5869349a18f766d?response-content-disposition=inline%3B%20filename%3D%22javascript-makecode-interface%20%25281%2529.jpg%22%3B%20filename%2A%3DUTF-8%27%27javascript-makecode-interface%2520%25281%2529.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=e59cf5a178af7b7586d86c6d02654ef9048a8cfb79ccd059ba37df9de5d4c16d">
+        <meta itemprop="image" content="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/variants/dG3b2x96ATz3LxGQieFxUVJw/141184e8e8c2b05ceb48e56112a7c969fd6d3175666c2daff6363137ea28fe0c?response-content-disposition=inline%3B%20filename%3D%22javascript-makecode-interface%20%25281%2529.jpg%22%3B%20filename%2A%3DUTF-8%27%27javascript-makecode-interface%2520%25281%2529.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=5867558cffd50b59a01e192fbd2f5f3f74d1a454a24174ad22c5e629563d9daf">
+    </div>
+    <div class="row">
+        <div class="column four-fifths">
+            <h2 class="step-title">
+            <a class="fragment-link" itemprop="url" href="#s614">
+                <strong class="stepValue">Step
+                7</strong>
+                <span class="stepTitleTitle" itemprop="name">
+                Javascript Interface - Introduction</span>
+            </a>
+            </h2>
+        </div>
+        <div class="column one-fifth">
+        </div>
+    </div>
+    <div class="row step-container">
+        <div class="column stepMedia step-main-media js-step-main-media stepImage stepImageContainer">
+            <img class="stepImage js-step-main-image hasNewMenu fluid visible medium" id="step614-main" itemprop="url" alt="Javascript Interface - Introduction" src="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/dG3b2x96ATz3LxGQieFxUVJw?response-content-disposition=inline%3B%20filename%3D%22javascript-makecode-interface%20%25281%2529.jpg%22%3B%20filename%2A%3DUTF-8%27%27javascript-makecode-interface%2520%25281%2529.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=55013512596a6ca89200dedba433cb78f4041b691c9ac491c6d4f60955e8a24a">
+        </div>
+        <div class="column step-content">
+            <div class="row step-lines-container">
+                <ul class="step-lines">
+                    <li class="level-0  bullet-line-icon-normal" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToDirection">
+                        <meta itemprop="position" content="">
+                        <div class="bullet fa fa-circle bullet_black"></div>
+                        <p itemprop="text">
+                            To access the JavaScript programming interface, click on the 'JavaScript' button in the top centre.
+                        </p>
+                        <div class="clearer"></div>
+                    </li>
+                    <li class="level-1  bullet-line-icon-note" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToTip">
+                        <meta itemprop="position" content="">
+                        <div class="bullet bulletIcon ico-step-icon-note"></div>
+                        <p itemprop="text">
+                            This will open the interface where any initial blocks become text. The add on packages still apply here.
+                        </p>
+                        <div class="clearer"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</li>
+
+
+            
+<li id="s615" class="step step-wrapper js-step">
+    <div class="step" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/HowToStep">
+        <meta itemprop="position" content="8">
+        <meta itemprop="thumbnailUrl" content="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/variants/iocBkLXddCPoQf513yLCkL8y/1d55937d92edc12a02f102727ff9a5bcb953531a6aeea599a5869349a18f766d?response-content-disposition=inline%3B%20filename%3D%22javascript-interface-makecode-introduction-example.jpg%22%3B%20filename%2A%3DUTF-8%27%27javascript-interface-makecode-introduction-example.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=c26f1ca2e423ae6ce0fced5f5af52628c379e92247954ab345de4dc565529efd">
+        <meta itemprop="image" content="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/variants/iocBkLXddCPoQf513yLCkL8y/141184e8e8c2b05ceb48e56112a7c969fd6d3175666c2daff6363137ea28fe0c?response-content-disposition=inline%3B%20filename%3D%22javascript-interface-makecode-introduction-example.jpg%22%3B%20filename%2A%3DUTF-8%27%27javascript-interface-makecode-introduction-example.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=57bbf8f8ed632a2bf6d668ecc21f2d650f9325732f5cf70b13afa36a99e6f90c">
+    </div>
+    <div class="row">
+        <div class="column four-fifths">
+            <h2 class="step-title">
+            <a class="fragment-link" itemprop="url" href="#s615">
+                <strong class="stepValue">Step
+                8</strong>
+                <span class="stepTitleTitle" itemprop="name">
+                Javascript Interface - Programming</span>
+            </a>
+            </h2>
+        </div>
+        <div class="column one-fifth">
+        </div>
+    </div>
+    <div class="row step-container">
+        <div class="column stepMedia step-main-media js-step-main-media stepImage stepImageContainer">
+            <img class="stepImage js-step-main-image hasNewMenu fluid visible medium" id="step615-main" itemprop="url" alt="Javascript Interface - Programming" src="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/iocBkLXddCPoQf513yLCkL8y?response-content-disposition=inline%3B%20filename%3D%22javascript-interface-makecode-introduction-example.jpg%22%3B%20filename%2A%3DUTF-8%27%27javascript-interface-makecode-introduction-example.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=0a2b9c290e82950079c94dc92acd5457dcf795ab08eadc01c0ad087dfcd22382">
+        </div>
+        <div class="column step-content">
+            <div class="row step-lines-container">
+                <ul class="step-lines">
+                    <li class="level-0  bullet-line-icon-normal" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToTip">
+                        <meta itemprop="position" content="">
+                        <div class="bullet fa fa-circle bullet_black"></div>
+                        <p itemprop="text">
+                            This programming language is javascript and goes beyond the scope of this guide; the categories on the side apply the text equivalent of the 'blocks'
+                        </p>
+                        <div class="clearer"></div>
+                    </li>
+                    <li class="level-1  bullet-line-icon-normal" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToTip">
+                        <meta itemprop="position" content="">
+                        <div class="bullet fa fa-circle bullet_black"></div>
+                        <p itemprop="text">
+                            This format is used mostly for precise tweaking or learning javascript.<br>
+                        </p>
+                        <div class="clearer"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</li>
+
+
+            
+<li id="s616" class="step step-wrapper js-step">
+    <div class="step" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/HowToStep">
+        <meta itemprop="position" content="9">
+        <meta itemprop="thumbnailUrl" content="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/variants/CwP1RWnz4gDtgF5NXjXKyP6W/1d55937d92edc12a02f102727ff9a5bcb953531a6aeea599a5869349a18f766d?response-content-disposition=inline%3B%20filename%3D%22download-example-hex-using-makecode-editor%20%25281%2529.jpg%22%3B%20filename%2A%3DUTF-8%27%27download-example-hex-using-makecode-editor%2520%25281%2529.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=b818e4dde39c960c4a241e67a73d6b8b5b1cf4791a862706ca4b0c804f907ca8">
+        <meta itemprop="image" content="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/variants/CwP1RWnz4gDtgF5NXjXKyP6W/141184e8e8c2b05ceb48e56112a7c969fd6d3175666c2daff6363137ea28fe0c?response-content-disposition=inline%3B%20filename%3D%22download-example-hex-using-makecode-editor%20%25281%2529.jpg%22%3B%20filename%2A%3DUTF-8%27%27download-example-hex-using-makecode-editor%2520%25281%2529.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=8a216a692900f24046e630d06bd81dcca6abf60129ba3391df34bbb7c5e421d3">
+    </div>
+    <div class="row">
+        <div class="column four-fifths">
+            <h2 class="step-title">
+            <a class="fragment-link" itemprop="url" href="#s616">
+                <strong class="stepValue">Step
+                9</strong>
+                <span class="stepTitleTitle" itemprop="name">
+                Adding a program to the micro:bit</span>
+            </a>
+            </h2>
+        </div>
+        <div class="column one-fifth">
+        </div>
+    </div>
+    <div class="row step-container">
+        <div class="column stepMedia step-main-media js-step-main-media stepImage stepImageContainer">
+            <img class="stepImage js-step-main-image hasNewMenu fluid visible medium" id="step616-main" itemprop="url" alt="Adding a program to the micro:bit" src="https://s3.ap-southeast-2.amazonaws.com/cdn.schappi.com/CwP1RWnz4gDtgF5NXjXKyP6W?response-content-disposition=inline%3B%20filename%3D%22download-example-hex-using-makecode-editor%20%25281%2529.jpg%22%3B%20filename%2A%3DUTF-8%27%27download-example-hex-using-makecode-editor%2520%25281%2529.jpg&amp;response-content-type=image%2Fjpeg&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJITXEHFCN3WK7R2Q%2F20191205%2Fap-southeast-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20191205T025431Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=386b3619419fd5cec4ff7334797fd85c3aca76a1e278f38a636b2508844a82d3">
+        </div>
+        <div class="column step-content">
+            <div class="row step-lines-container">
+                <ul class="step-lines">
+                    <li class="level-0  bullet-line-icon-normal" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToDirection">
+                        <meta itemprop="position" content="">
+                        <div class="bullet fa fa-circle bullet_black"></div>
+                        <p itemprop="text">
+                            First off, click the download button in the bottom left corner of the screen.</p><ul><li>This will download a hex file (computer program file)&nbsp; which the micro:bit can read.</li></ul>
+                        <p></p>
+                        <div class="clearer"></div>
+                    </li>
+                    <li class="level-1  bullet-line-icon-normal" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToDirection">
+                        <meta itemprop="position" content="">
+                        <div class="bullet fa fa-circle bullet_black"></div>
+                        <p itemprop="text">
+                            Next, plug in your micro:bit, this will reveal a USB on your computer.
+                        </p>
+                        <div class="clearer"></div>
+                    </li>
+                    <li class="level-2  bullet-line-icon-normal" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToDirection">
+                        <meta itemprop="position" content="">
+                        <div class="bullet fa fa-circle bullet_black"></div>
+                        <p itemprop="text">
+                            Lastly copy across the downloaded file to the micro:bit by dragging and dropping it into the MICRO:BIT drive
+                        </p>
+                        <div class="clearer"></div>
+                    </li>
+                    <li class="level-3  bullet-line-icon-normal" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToDirection">
+                        <meta itemprop="position" content="">
+                        <div class="bullet fa fa-circle bullet_black"></div>
+                        <p itemprop="text">
+                            The micro:bit will flash as the code is being uploaded. Once done, unplug the micro:bit.<br>
+                        </p>
+                        <div class="clearer"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</li>
+       
+    </ol>
+</article>

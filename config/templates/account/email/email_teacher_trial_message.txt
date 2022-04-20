@@ -1,0 +1,11 @@
+Hi{% if teacher.first_name %} {{ teacher.last_name }}{% endif %}
+
+You have a trial class booked by: {{staff.first_name}} 
+The trial class is on {{date}} at {{location}}
+
+The student is {{student.first_name}} {{student.last_name}} and wants to do {{club.name}}.
+
+Please contact {{staff.email}} if you have any questions.
+
+Thanks,
+CoolSchool Team
